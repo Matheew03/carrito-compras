@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { SECONDARY_COLOR } from "../commons/constants";
+import { QUARTERNARY_COLOR, SECONDARY_COLOR, TERTIARY_COLOR } from "../commons/constants";
 
 export const stylesGLobal = StyleSheet.create({
     title: {
@@ -16,8 +16,28 @@ export const stylesGLobal = StyleSheet.create({
         paddingHorizontal: 30,
         paddingTop: 40
     },
-    titleWelcome:{
+    titleWelcome: {
         fontSize: 17,
+        fontWeight: 'bold'
+    },
+    input: {
+        backgroundColor: QUARTERNARY_COLOR,
+        paddingHorizontal: 20,
+        borderRadius: 10,
+        marginVertical: 7
+    },
+    containerInput: {
+        marginVertical: 15
+    },
+    button: {
+        backgroundColor: TERTIARY_COLOR,
+        paddingVertical: 15,
+        borderRadius: 10
+    },
+    buttonText: {
+        textAlign: 'center',
+        color: SECONDARY_COLOR,
+        fontSize: 15,
         fontWeight: 'bold'
     }
 
